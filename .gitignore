@@ -41,3 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 /app/generated/prisma
+
+# AI IDE tooling — not needed in production or public repos
+.agents/
+.kiro/
+.windsurf/
+.claude/
