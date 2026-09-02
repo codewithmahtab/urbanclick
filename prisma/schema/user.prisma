@@ -1,0 +1,40 @@
+model User {
+  id       String @id @default(cuid())
+  name     String
+  email    String @unique
+  password String
+  role     Role   @default(USER)
+
+  seller    Seller?
+  wishlist  Wishlist?
+  cart      Cart?
+  addresses Address[]
+  orders    Order[]
+  reviews   Review[]
+  sessions  Session[]
+
+  isVerified   Boolean   @default(false)
+  otp          String?
+  otpExpiresAt DateTime?
+
+  resetToken          String?   @unique
+  resetTokenExpiresAt DateTime?
+
+  pendingEmail String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Session {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  expiresAt DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}

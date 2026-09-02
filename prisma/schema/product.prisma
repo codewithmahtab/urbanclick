@@ -1,0 +1,40 @@
+model Product {
+  id            String  @id @default(cuid())
+  name          String
+  slug          String  @unique
+  description   String?
+  imageUrl      String
+  averageRating Float   @default(0)
+  totalReviews  Int     @default(0)
+
+  priceInPaise Int
+  stock        Int     @default(0)
+  isActive     Boolean @default(true)
+  sku          String  @unique
+
+  isPublished Boolean @default(false)
+  isDeleted   Boolean @default(false)
+
+  wishlistItems WishlistItem[]
+  reviews       Review[]
+  categories    ProductCategory[]
+  cartItems     CartItem[]
+  orderItems    OrderItem[]
+
+  sellerId String
+  seller   Seller @relation(fields: [sellerId], references: [id])
+
+  brandId String?
+  brand   Brand?  @relation(fields: [brandId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Brand {
+  id   String @id @default(cuid())
+  name String
+  slug String @unique
+
+  products Product[]
+}

@@ -1,0 +1,37 @@
+enum SellerStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  SUSPENDED
+}
+
+model Seller {
+  id String @id @default(cuid())
+
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  storeName   String
+  slug        String  @unique
+  description String?
+
+  phone String
+
+  addressLine String
+  city        String
+  state       String
+  pincode     String
+  country     String @default("India")
+
+  gstin String?
+  pan   String?
+
+  logoUrl String?
+
+  status SellerStatus @default(PENDING)
+
+  products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
