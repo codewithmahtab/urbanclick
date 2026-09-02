@@ -2,7 +2,7 @@
 
 import { useTransition } from "react";
 import { formatDistanceToNow } from "date-fns";
-import { SellerStatus } from "@prisma/client";
+import type { SellerStatus } from "@prisma/client";
 import { toast } from "sonner";
 import { Loader2, Store } from "lucide-react";
 import { Badge } from "@/components/ui/badge";

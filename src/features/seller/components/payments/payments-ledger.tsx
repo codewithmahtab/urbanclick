@@ -2,7 +2,7 @@ import { formatDistanceToNow } from "date-fns";
 import { formatCurrency } from "@/utils/format";
 import { Badge } from "@/components/ui/badge";
 import { FileText } from "lucide-react";
-import { OrderStatus } from "@prisma/client";
+import type { OrderStatus } from "@prisma/client";
 import type { SellerLedgerItem } from "@/features/seller/services/get-seller-earnings";
 
 const statusColorMap: Record<OrderStatus, string> = {

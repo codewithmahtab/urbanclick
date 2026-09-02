@@ -3,7 +3,7 @@ import Link from "next/link";
 import { formatCurrency } from "@/utils/format";
 import type { SingleOrderItem } from "@/features/orders/services/get-orders";
 import { Badge } from "@/components/ui/badge";
-import { OrderStatus } from "@prisma/client";
+import type { OrderStatus } from "@prisma/client";
 
 const itemStatusColorMap: Record<OrderStatus, string> = {
   PENDING: "bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20",

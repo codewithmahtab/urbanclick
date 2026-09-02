@@ -3,7 +3,15 @@
 import { useTransition } from "react";
 import { formatCurrency } from "@/utils/format";
 import { formatDistanceToNow } from "date-fns";
-import { OrderStatus } from "@prisma/client";
+import type { OrderStatus } from "@prisma/client";
+
+const ORDER_STATUSES: OrderStatus[] = [
+  "PENDING",
+  "PROCESSING",
+  "SHIPPED",
+  "DELIVERED",
+  "CANCELLED",
+];
 import { updateOrderItemStatus } from "@/features/seller/actions/update-order-item-status";
 import { Loader2 } from "lucide-react";
 import { ProductImage } from "@/components/ui/product-image";
@@ -109,7 +117,7 @@ export function SellerOrderList({ items }: SellerOrderListProps) {
                   }
                   className="h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  {Object.values(OrderStatus).map((status) => (
+                  {ORDER_STATUSES.map((status) => (
                     <option key={status} value={status}>
                       {status}
                     </option>

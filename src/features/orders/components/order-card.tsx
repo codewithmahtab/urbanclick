@@ -2,7 +2,7 @@ import { formatCurrency, formatDate } from "@/utils/format";
 import type { SingleOrderWithItems } from "@/features/orders/services/get-orders";
 import OrderItemCard from "./order-item-card";
 import { Badge } from "@/components/ui/badge";
-import { OrderStatus } from "@prisma/client";
+import type { OrderStatus } from "@prisma/client";
 
 const statusColorMap: Record<OrderStatus, string> = {
   PENDING: "bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20",
