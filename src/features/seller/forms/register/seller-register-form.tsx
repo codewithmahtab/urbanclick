@@ -41,7 +41,7 @@ export default function SellerRegisterForm() {
           <h1 className="text-3xl font-semibold">Become a Seller</h1>
 
           <p className="text-muted-foreground">
-            Create your seller account and start selling on Next Shop.
+            Create your seller account and start selling on UrbanClick.
           </p>
         </div>
 

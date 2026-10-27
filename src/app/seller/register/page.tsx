@@ -7,9 +7,9 @@ import { prisma } from "@/lib/prisma";
 
 export const metadata: Metadata = {
   title: "Become a Seller",
-  description: "Register as a seller on Next Shop and start selling your products to millions of customers.",
+  description: "Register as a seller on UrbanClick and start selling your products to millions of customers.",
   openGraph: {
-    title: "Become a Seller on Next Shop",
+    title: "Become a Seller on UrbanClick",
     description: "Set up your store and start selling today. Manage products, track orders, and grow your business.",
   },
 };

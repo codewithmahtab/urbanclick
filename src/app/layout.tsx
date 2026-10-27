@@ -24,11 +24,11 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://next-shop.vercel.a
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Next Shop — Online Shopping for Electronics, Fashion & More",
-    template: "%s | Next Shop",
+    default: "UrbanClick — Online Shopping for Electronics, Fashion & More",
+    template: "%s | UrbanClick",
   },
   description:
-    "Next Shop is your one-stop online marketplace for electronics, fashion, home & kitchen, beauty, sports, and more. Discover great deals with fast delivery.",
+    "UrbanClick is your one-stop online marketplace for electronics, fashion, home & kitchen, beauty, sports, and more. Discover great deals with fast delivery.",
   keywords: [
     "online shopping",
     "ecommerce",
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
     "home kitchen",
     "beauty",
     "sports",
-    "next shop",
+    "urbanclick",
   ],
-  authors: [{ name: "Next Shop" }],
-  creator: "Next Shop",
-  publisher: "Next Shop",
+  authors: [{ name: "UrbanClick" }],
+  creator: "UrbanClick",
+  publisher: "UrbanClick",
   robots: {
     index: true,
     follow: true,
@@ -56,24 +56,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: BASE_URL,
-    siteName: "Next Shop",
-    title: "Next Shop — Online Shopping for Electronics, Fashion & More",
+    siteName: "UrbanClick",
+    title: "UrbanClick — Online Shopping for Electronics, Fashion & More",
     description:
-      "Next Shop is your one-stop online marketplace. Discover great deals across electronics, fashion, home & kitchen, beauty, and more.",
+      "UrbanClick is your one-stop online marketplace. Discover great deals across electronics, fashion, home & kitchen, beauty, and more.",
     images: [
       {
         url: "/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Next Shop",
+        alt: "UrbanClick",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next Shop — Online Shopping for Electronics, Fashion & More",
+    title: "UrbanClick — Online Shopping for Electronics, Fashion & More",
     description:
-      "Discover great deals on electronics, fashion, home & kitchen, and more at Next Shop.",
+      "Discover great deals on electronics, fashion, home & kitchen, and more at UrbanClick.",
     images: ["/og-default.png"],
   },
 };

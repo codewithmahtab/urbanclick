@@ -14,8 +14,8 @@ export default function MainNavbar() {
         className="flex items-center text-2xl font-bold tracking-tight hover:opacity-90 transition-opacity shrink-0"
         style={{ fontFamily: "var(--font-fredoka)" }}
       >
-        <span className="text-yellow-400">Next</span>
-        <span className="text-white">Shop</span>
+        <span className="text-yellow-400">Urban</span>
+        <span className="text-white">Click</span>
       </Link>
 
       {/* Search — hidden on mobile, visible md+ */}

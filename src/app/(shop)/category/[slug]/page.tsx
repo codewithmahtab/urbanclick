@@ -37,9 +37,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
   return {
     title: `${category.name} — Shop Online`,
-    description: `Browse the best ${category.name} products on Next Shop. Great prices, fast delivery.`,
+    description: `Browse the best ${category.name} products on UrbanClick. Great prices, fast delivery.`,
     openGraph: {
-      title: `${category.name} | Next Shop`,
+      title: `${category.name} | UrbanClick`,
       description: `Explore our ${category.name} collection with great deals and fast delivery.`,
     },
   };

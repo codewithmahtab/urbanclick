@@ -1,4 +1,4 @@
-﻿export const instant = false;
+export const instant = false;
 
 import type { Metadata } from "next";
 import ResetPasswordForm from "@/features/auth/forms/reset-password-form";
@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Reset Password",
-  description: "Set a new password for your Next Shop account.",
+  description: "Set a new password for your UrbanClick account.",
   robots: { index: false, follow: false },
 };
 

@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/seller" className="hover:text-primary transition-colors">
-                  Sell on Next Shop
+                  Sell on UrbanClick
                 </Link>
               </li>
               <li>
@@ -147,7 +147,7 @@ export default function Footer() {
               Interest-Based Ads
             </Link>
           </div>
-          <p className="text-xs">© 2026, Next Shop | Built by Mahtab</p>
+          <p className="text-xs">© 2026, UrbanClick | Built by Mahtab</p>
         </div>
       </div>
     </footer>

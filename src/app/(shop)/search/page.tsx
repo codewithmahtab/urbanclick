@@ -32,8 +32,8 @@ export async function generateMetadata({
   return {
     title: q ? `Search results for "${q}"` : "Search Products",
     description: q
-      ? `Browse products matching "${q}" on Next Shop.`
-      : "Search for products across all categories on Next Shop.",
+      ? `Browse products matching "${q}" on UrbanClick.`
+      : "Search for products across all categories on UrbanClick.",
     robots: { index: false, follow: true },
   };
 }

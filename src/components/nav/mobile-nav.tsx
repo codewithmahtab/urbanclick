@@ -53,8 +53,8 @@ export default function MobileNav({ user, isSeller, cartCount }: MobileNavProps)
             className="flex items-center text-xl font-bold tracking-tight hover:opacity-90 transition-opacity"
             style={{ fontFamily: "var(--font-fredoka)" }}
           >
-            <span className="text-yellow-400">Next</span>
-            <span className="text-white">Shop</span>
+            <span className="text-yellow-400">Urban</span>
+            <span className="text-white">Click</span>
           </Link>
           <button
             type="button"

@@ -1,13 +1,13 @@
-﻿export const instant = false;
+export const instant = false;
 
 import { Mail } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Next Shop support. We respond within 24 hours.",
+  description: "Get in touch with UrbanClick support. We respond within 24 hours.",
   openGraph: {
-    title: "Contact Next Shop",
+    title: "Contact UrbanClick",
     description: "Have a question? Reach out and we will get back to you within 24 hours.",
   },
 };

@@ -1,4 +1,4 @@
-﻿export const instant = false;
+export const instant = false;
 
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
@@ -7,7 +7,7 @@ import SignupForm from "@/features/auth/forms/signup-form";
 
 export const metadata: Metadata = {
   title: "Create Account",
-  description: "Create a free Next Shop account to start shopping, save items, and track your orders.",
+  description: "Create a free UrbanClick account to start shopping, save items, and track your orders.",
   robots: { index: false, follow: false },
 };
 

@@ -1,4 +1,4 @@
-﻿export const instant = false;
+export const instant = false;
 
 import type { Metadata } from "next";
 import { requireSeller } from "@/features/auth/lib/authorization";
@@ -7,7 +7,7 @@ import { SellerProductForm } from "@/features/seller/forms/product/seller-produc
 
 export const metadata: Metadata = {
   title: "Add New Product",
-  description: "Create and publish a new product listing on Next Shop.",
+  description: "Create and publish a new product listing on UrbanClick.",
   robots: { index: false, follow: false },
 };
 

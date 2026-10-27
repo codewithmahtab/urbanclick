@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const description = product.description
     ? product.description.slice(0, 155)
-    : `Buy ${product.name} at ${priceFormatted} on Next Shop. ${product.stock > 0 ? "In stock, ships fast." : ""}`;
+    : `Buy ${product.name} at ${priceFormatted} on UrbanClick. ${product.stock > 0 ? "In stock, ships fast." : ""}`;
 
   return {
     title: product.name,

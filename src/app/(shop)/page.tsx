@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Shop from millions of products across electronics, fashion, home & kitchen, beauty, sports and more. Best prices, fast delivery, easy returns.",
   openGraph: {
-    title: "Next Shop — Online Shopping for Electronics, Fashion & More",
+    title: "UrbanClick — Online Shopping for Electronics, Fashion & More",
     description:
       "Shop from millions of products. Best prices, fast delivery, easy returns.",
   },
